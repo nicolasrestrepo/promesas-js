@@ -1,0 +1,13 @@
+Backbone's only hard dependency is Underscore.js ( >= 1.8.3). For RESTful persistence and DOM manipulation with Backbone.View, include jQuery ( >= 1.11.0), and json2.js for older Internet Explorer support. (Mimics of the Underscore and jQuery APIs, such as Lodash and Zepto, will also tend to work, with varying degrees of compatibility.)
+
+Getting Started
+
+When working on a web application that involves a lot of JavaScript, one of the first things you learn is to stop tying your data to the DOM. It's all too easy to create JavaScript applications that end up as tangled piles of jQuery selectors and callbacks, all trying frantically to keep data in sync between the HTML UI, your JavaScript logic, and the database on your server. For rich client-side applications, a more structured approach is often helpful.
+
+With Backbone, you represent your data as Models, which can be created, validated, destroyed, and saved to the server. Whenever a UI action causes an attribute of a model to change, the model triggers a "change" event; all the Views that display the model's state can be notified of the change, so that they are able to respond accordingly, re-rendering themselves with the new information. In a finished Backbone app, you don't have to write the glue code that looks into the DOM to find an element with a specific id, and update the HTML manually — when the model changes, the views simply update themselves.
+
+Philosophically, Backbone is an attempt to discover the minimal set of data-structuring (models and collections) and user interface (views and URLs) primitives that are generally useful when building web applications with JavaScript. In an ecosystem where overarching, decides-everything-for-you frameworks are commonplace, and many libraries require your site to be reorganized to suit their look, feel, and default behavior — Backbone should continue to be a tool that gives you the freedom to design the full experience of your web application.
+
+If you're new here, and aren't yet quite sure what Backbone is for, start by browsing the list of Backbone-based projects.
+
+Many of the code examples in this documentation are runnable, because Backbone is included on this page. Click the play button to execute them.
